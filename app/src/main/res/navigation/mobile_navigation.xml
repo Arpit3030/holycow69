@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_myorders"
+    >
+
+    <fragment
+        android:id="@+id/nav_myorders"
+        android:name="com.example.android.holycow.ui.myorders.myordersFragment"
+        android:label="@string/menu_myorders"
+        tools:layout="@layout/fragment_myorders" />
+
+    <fragment
+        android:id="@+id/nav_myprofile"
+        android:name="com.example.android.holycow.ui.myprofile.myprofileFragment"
+        android:label="@string/menu_myprofile"
+        tools:layout="@layout/fragment_myprofile" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.example.android.holycow.ui.feedback.feedbackFragment"
+        android:label="@string/menu_feedback"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.android.holycow.ui.logout.logoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>
